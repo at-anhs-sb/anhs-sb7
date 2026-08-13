@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="theme-color"
+    content="#080808"
+  >
+
+  <meta
+    name="description"
+    content="The ANHS Protocol — COTE"
+  >
+
+  <meta
+    name="color-scheme"
+    content="dark"
+  >
+
+  <title>The ANHS Protocol — COTE</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="scanline"></div>
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+  </div>
+
+  <aside class="sidebar" id="sidebar">
+
+    <a
+      class="sidebar-brand"
+      href="#home"
+      aria-label="Return to ANHS Protocol home"
+    >
+      <div class="sidebar-logo-wrap">
+        <img
+          class="sidebar-logo"
+          src="anhs-club-logo.png"
+          alt="The ANHS Protocol club logo"
+          width="64"
+          height="64"
+        >
+      </div>
+
+      <div class="sidebar-brand-text">
+        <strong>THE ANHS<br>PROTOCOL</strong>
+        <small>CLASSROOM OF THE ELITE</small>
+      </div>
+    </a>
+
+    <div class="sidebar-status">
+      <span class="status-indicator"></span>
+
+      <div>
+        <strong>SYSTEM ONLINE</strong>
+        <small>ANHS NETWORK</small>
+      </div>
+    </div>
+
+    <nav
+      id="mainNav"
+      class="sidebar-nav"
+      aria-label="Primary navigation"
+    >
+
+      <div class="nav-heading">
+        <span>NAVIGATION</span>
+        <span>01—04</span>
+      </div>
+
+      <a
+        class="nav-item active"
+        href="#home"
+        data-section="home"
+      >
+        <span class="nav-index">01</span>
+
+        <span class="nav-copy">
+          <strong>HOME</strong>
+          <small>System Overview</small>
+        </span>
+
+        <span class="nav-arrow">→</span>
+      </a>
+
+      <a
+        class="nav-item"
+        href="#registry"
+        data-section="registry"
+      >
+        <span class="nav-index">02</span>
+
+        <span class="nav-copy">
+          <strong>REGISTRY</strong>
+          <small>Personnel Database</small>
+        </span>
+
+        <span class="nav-arrow">→</span>
+      </a>
+
+      <a
+        class="nav-item"
+        href="#command"
+        data-section="command"
+      >
+        <span class="nav-index">03</span>
+
+        <span class="nav-copy">
+          <strong>COMMAND</strong>
+          <small>Directives & Console</small>
+        </span>
+
+        <span class="nav-arrow">→</span>
+      </a>
+
+      <a
+        class="nav-item"
+        href="#social"
+        data-section="social"
+      >
+        <span class="nav-index">04</span>
+
+        <span class="nav-copy">
+          <strong>SOCIAL</strong>
+          <small>Network & Radio</small>
+        </span>
+
+        <span class="nav-arrow">→</span>
+      </a>
+
+    </nav>
+
+    <div class="sidebar-system">
+
+      <div class="system-heading">
+        <span>SYSTEM</span>
+        <span>STATUS</span>
+      </div>
+
+      <div class="system-row">
+        <span>NETWORK</span>
+        <strong>ONLINE</strong>
+      </div>
+
+      <div class="system-row">
+        <span>REGISTRY</span>
+        <strong>CONNECTED</strong>
+      </div>
+
+      <div class="system-row">
+        <span>RADIO</span>
+        <strong>STANDBY</strong>
+      </div>
+
+    </div>
+
+    <div class="sidebar-footer">
+
+      <div class="boot-label">
+        ANHS OS
+      </div>
+
+      <div class="boot-version">
+        BUILD 6.0
+      </div>
+
+      <div class="boot-line">
+        <span>BOOT</span>
+        <strong>COMPLETE</strong>
+      </div>
+
+      <div class="boot-line">
+        <span>PROTOCOL</span>
+        <strong>ACTIVE</strong>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <button
+    class="nav-toggle"
+    id="navToggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="sidebar"
+    aria-label="Open navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <main
+    id="app"
+    class="app-shell"
+    tabindex="-1"
+  ></main>
+
+  <footer class="site-footer">
+
+    <div class="footer-system">
+      <span>THE ANHS PROTOCOL</span>
+      <span>COTE CHESS NETWORK</span>
+      <span>BUILD 6.0</span>
+    </div>
+
+  </footer>
+
+  <audio
+    id="audio"
+    preload="metadata"
+  ></audio>
+
+  <script src="script.js"></script>
+  <script src="radio.js"></script>
+
+</body>
+</html>
